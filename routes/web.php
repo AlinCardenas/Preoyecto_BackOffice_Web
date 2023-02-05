@@ -1,5 +1,11 @@
 <?php
 
+use App\Http\Controllers\entradasSalidasController;
+use App\Http\Controllers\faltasController;
+use App\Http\Controllers\leerBonosController;
+use App\Http\Controllers\leerRolesController;
+use App\Http\Controllers\listaUsuariosController;
+use App\Http\Controllers\monitoreoController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +22,25 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+//Rutas solo views
+Route::get('/monitoreo', monitoreoController::class);
+Route::get('/listaUsuarios', listaUsuariosController::class);
+Route::get('/faltas', faltasController::class);
+Route::get('/entradasSalidas', entradasSalidasController::class);
+
+//Rutas crudRoles
+
+Route::get('crudRoles', [leerRolesController::class,'index']);
+Route::get('crudRoles/create', [leerRolesController::class,'create']);
+
+//Rutas crudBonos
+
+Route::get('crudBonos', [leerBonosController::class,'index']);
+Route::get('crudBonos/create', [leerBonosController::class,'create']);
+
+
+
+
+
+

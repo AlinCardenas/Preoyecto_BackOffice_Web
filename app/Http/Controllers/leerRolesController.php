@@ -13,7 +13,7 @@ class leerRolesController extends Controller
      */
     public function index()
     {
-        //
+        return "Principal";
     }
 
     /**
@@ -23,7 +23,7 @@ class leerRolesController extends Controller
      */
     public function create()
     {
-        //
+        return "Crear";
     }
 
     /**
@@ -56,7 +56,7 @@ class leerRolesController extends Controller
      */
     public function edit($id)
     {
-        //
+        return "editar";
     }
 
     /**
@@ -79,6 +79,6 @@ class leerRolesController extends Controller
      */
     public function destroy($id)
     {
-        //
+        return "eliminar";
     }
 }
