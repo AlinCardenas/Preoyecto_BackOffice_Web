@@ -17,7 +17,7 @@
             <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
                 <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
                     <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto  mt-4 text-decoration-none">
-                        <img src="{{asset('img/logo.png') }}" alt="" width="185" height="70">
+                        <img src="{{asset('img/logo.png') }}" alt="Logo" width="185" height="68">
                     </a>
                     <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
                         <li class="nav-item">
@@ -31,12 +31,12 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/entradas-salidas" class="nav-link align-middle px-0">
+                            <a href="/entradasSalidas" class="nav-link align-middle px-0">
                                 <i class="fs-4"></i> <span class="ms-1 d-none d-sm-inline text-white">Registros entrada y salida</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/lista-usuarios" class="nav-link align-middle px-0">
+                            <a href="/listaUsuarios" class="nav-link px-0 align-middle">
                                 <i class="fs-4"></i> <span class="ms-1 d-none d-sm-inline text-white">Usuarios</span>
                             </a>
                         </li>
