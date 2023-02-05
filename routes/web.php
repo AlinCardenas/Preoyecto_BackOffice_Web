@@ -25,17 +25,15 @@ Route::get('/', function () {
 
 //Rutas solo views
 Route::get('/monitoreo', monitoreoController::class);
-Route::get('/listaUsuarios', listaUsuariosController::class);
+Route::get('/lista-usuarios', listaUsuariosController::class);
 Route::get('/faltas', faltasController::class);
-Route::get('/entradasSalidas', entradasSalidasController::class);
+Route::get('/entradas-salidas', entradasSalidasController::class);
 
 //Rutas crudRoles
-
 Route::get('crudRoles', [leerRolesController::class,'index']);
 Route::get('crudRoles/create', [leerRolesController::class,'create']);
 
 //Rutas crudBonos
-
 Route::get('crudBonos', [leerBonosController::class,'index']);
 Route::get('crudBonos/create', [leerBonosController::class,'create']);
 
